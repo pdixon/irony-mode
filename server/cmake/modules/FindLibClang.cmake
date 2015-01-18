@@ -14,7 +14,8 @@
 #               Known LLVM release numbers.
 
 # most recent versions come first
-set(LIBCLANG_KNOWN_LLVM_VERSIONS 3.6
+set(LIBCLANG_KNOWN_LLVM_VERSIONS HEAD
+  3.6
   3.5.0                   #Arch Linux
   3.5                     #LLVM Debian/Ubuntu packages from http://llvm.org/apt/
   3.4.2 3.4.1 3.4 3.3 3.2 3.1)
