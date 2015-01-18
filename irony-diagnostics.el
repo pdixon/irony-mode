@@ -61,8 +61,8 @@
                      (irony-diagnostics--context))
                (make-list 2 context))
     (setq irony-diagnostics--diagnostics diagnostics
-          irony-diagnostics--available-context context)
-    (mapc 'funcall irony-diagnostics--callbacks)))
+          irony-diagnostics--available-context context))
+  (mapc 'funcall irony-diagnostics--callbacks))
 
 (defun irony-diagnostics--in-progress-p ()
   (unless (irony-diagnostics-available-p)
