@@ -36,6 +36,8 @@ foreach (version ${LIBCLANG_KNOWN_LLVM_VERSIONS})
     "/usr/local/Cellar/llvm/${version}/include"
     # LLVM Homebrew/versions
     "/usr/local/lib/llvm-${version}/include"
+    # LLVM Homebrew unversioned
+    "/usr/local/opt/llvm/include"
     )
 
   list(APPEND libclang_llvm_lib_search_paths
@@ -47,6 +49,8 @@ foreach (version ${LIBCLANG_KNOWN_LLVM_VERSIONS})
     "/usr/local/Cellar/llvm/${version}/lib"
     # LLVM Homebrew/versions
     "/usr/local/lib/llvm-${version}/lib"
+    # LLVM Homebrew unversioned
+    "/usr/local/opt/llvm/lib"
     )
 endforeach()
 
